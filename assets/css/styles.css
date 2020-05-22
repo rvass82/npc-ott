@@ -1,0 +1,153 @@
+html {
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	margin: 0 20px;	
+	font-family: helvetica, arial, sans;
+	background-color: #111;
+}
+
+/*HEADER STYLES*/
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	height: 100px;
+}
+.logo {
+	flex: 1;
+}
+
+h1 {
+	flex: 1;
+	font-size: 3em;
+	color: white;
+	margin: 0;
+}
+
+.header-nav {
+	height: 50px;
+	/*top: 0;*/
+	text-align: right;
+	flex: 1;
+}
+.header-nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* DROPDOWN STYLES */
+.dropdown {
+  position: relative;
+	display: inline-block;
+	/*margin-right: 50px;*/
+}
+.dropdown:first-child {
+	margin-right: 50px;
+}
+.dropdown:hover .drop-menu {
+  display: block;
+}
+.dropdown:hover .drop-trigger:after {
+  border-color: #ed6e2f transparent transparent;
+}
+.drop-trigger {
+  display: inline-block;
+  padding-right: 1.5em;
+  position: relative;
+}
+.drop-trigger:after {
+  border: 0.3em solid;
+  border-color: #fff transparent transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 0.3em;
+  width: 0;
+}
+.drop-menu {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  display: none;
+  list-style: none;
+  padding: 1em 0 0;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+.drop-menu:before {
+  border: 0.6em solid;
+  border-color: transparent transparent #fff;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 1em;
+  top: -0.1em;
+  width: 0;
+}
+.drop-menu li {
+  background-color: #fff;
+}
+.drop-menu li ~ li {
+  border-top: 1px dotted rgba(0,0,0,0.1)
+}
+/*.drop-menu li:first-child {*/
+/*  border-radius: 5px 5px 0 0;*/
+/*  color: #999;*/
+/*  font-size: 0.5em;*/
+/*  padding: 1em 1em 0.25em;*/
+/*  padding: 0.5em 2em 0.5em 1em;*/
+/*  text-align: right;*/
+/*  text-transform: uppercase;*/
+/*}*/
+.drop-menu li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.drop-menu a {
+  color: #333;
+  display: block;
+  font-weight: normal;
+  padding: 0.5em 2em 0.5em 1em;
+  text-align: left;
+  text-transform: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.drop-menu a:hover {
+  background-color: rgba(0,0,0,0.1);
+  color: #333;
+}
+
+/*MAIN STYLES*/
+
+main {
+	/*width: 90%;*/
+	/*height: 100vh;*/
+	/*background-color: white;*/
+	padding: 20px;
+}
+
+/*PIP STYLES*/
+.npc-wrapper, .tbs-wrapper {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.pip {
+	display: inline-block;
+
+}
+
+h3 {
+	text-align: center;
+	font-weight: normal;
+	color: white;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>OTT Playback</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header class="header">
+	<div class="logo"><img src="/assets/images/NPCMedia.PNG"></div>
+	<div><h1>OTT Playback</h1></div>
+	<nav class="header-nav">
+		<ul>
+			<li class="dropdown">
+				<span class="drop-trigger"><img src="/assets/images/seven-logo.png"></img></span>
+				<ul class="drop-menu">
+					<li><a href="">7 Sydney</a></li>
+					<li><a href="">7 Melbourne</a></li>
+					<li><a href="">7 Brisbane</a></li>
+					<li><a href="">7 Gold Coast</a></li>
+					<li><a href="">7 Adelaide</a></li>
+					<li><a href="">7 Perth</a></li>
+					<li><a href="">7Q Cairns</a></li>
+					<li><a href="">7Q Townsville</a></li>
+					<li><a href="">7Q Mackay</a></li>
+					<li><a href="">7Q Rockhampton</a></li>
+					<li><a href="">7Q Wide Bay</a></li>
+					<li><a href="">7Q Sunshine Coast</a></li>
+					<li><a href="">7Q Toowoomba</a></li>
+				</ul>				
+			</li>
+			<li class="dropdown">
+				<span class="drop-trigger"><img src="/assets/images/nine-logo.png"></span>
+				<ul class="drop-menu">
+					<li><a href="9sydney">9 Sydney</a></li>
+					<li><a href="9melbourne">9 Melbourne</a></li>
+					<li><a href="9brisbane">9 Brisbane</a></li>
+					<li><a href="9adelaide.html">9 Adelaide</a></li>
+					<li><a href="9perth">9 Perth</a></li>
+				</ul>		
+			</li>
+		</ul>
+	</nav>
+</header>
+
+    <!--frontmatter turns a static page into a jekyll page template-->
+
+<main>
+	<div class="npc-wrapper">
+		<div class="pip">
+			<video id="npc-nine" class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008324/ch9-bne/master.m3u8">
+			</video>
+			<h3>NPC Brisbane Nine</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-gem' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008315/gem-bne/master.m3u8">
+			</video>
+			<h3>NPC Brisbane Gem</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-go' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008320/go-bne/master.m3u8">
+			</video>
+			<h3>NPC Brisbane Go</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-life' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008328/life-bne/master.m3u8">
+			</video>
+			<h3>NPC Brisbane Life</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-rush' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2010629/rush-bne/master.m3u8">
+			</video>
+			<h3>NPC Brisbane Rush</h3>
+		</div>
+	</div>
+	
+	<div class="tbs-wrapper">
+		<div class="pip">
+			<video id='tbs-nine' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008324-b/ch9-bne/master.m3u8">
+			</video>
+			<h3>TBS Brisbane Nine</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-gem' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008315-b/gem-bne/master.m3u8">
+			</video>
+			<h3>TBS Brisbane Gem</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-go' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008320-b/go-bne/master.m3u8">
+			</video>
+			<h3>TBS Brisbane Go</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-life' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008328-b/life-bne/master.m3u8">
+			</video>
+			<h3>TBS Brisbane Life</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-rush' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2010629-b/rush-bne/master.m3u8">
+			</video>
+			<h3>TBS Brisbane Rush</h3>
+		</div>
+		
+	</div>
+
+</main>
+
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+<!--NPC-->
+<script>
+	var player1 = videojs('npc-nine');
+  player1.autoplay();
+      
+  var player2 = videojs('npc-gem');
+  player2.autoplay();
+  
+  var player3 = videojs('npc-go');
+  player3.autoplay();
+  
+  var player4 = videojs('npc-life');
+  player4.autoplay();
+  
+  var player5 = videojs('npc-rush');
+  player5.autoplay();        
+  
+  videojs('player', {autoplay: true});
+</script>
+
+<!--TBS-->
+<script>
+	var player1 = videojs('tbs-nine');
+  player1.autoplay();
+  
+  var player2 = videojs('tbs-gem');
+  player2.autoplay();
+  
+  var player3 = videojs('tbs-go');
+  player3.autoplay();
+  
+  var player4 = videojs('tbs-life');
+  player4.autoplay();
+  
+  var player5 = videojs('tbs-rush');
+  player5.autoplay();        
+  
+  videojs('player', {autoplay: true});
+</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<main>
+	<div class="npc-wrapper">
+		<div class="pip">
+			<video id="npc-nine" class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.npc-nine }}">
+			</video>
+			<h3>NPC {{ page.market }} Nine</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-gem' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.npc-gem }}">
+			</video>
+			<h3>NPC {{ page.market }} Gem</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-go' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.npc-go }}">
+			</video>
+			<h3>NPC {{ page.market }} Go</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-life' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.npc-life }}">
+			</video>
+			<h3>NPC {{ page.market }} Life</h3>
+		</div>
+		<div class="pip">
+			<video id='npc-rush' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.npc-rush }}">
+			</video>
+			<h3>NPC {{ page.market }} Rush</h3>
+		</div>
+	</div>
+	
+	<div class="tbs-wrapper">
+		<div class="pip">
+			<video id='tbs-nine' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.tbs-nine }}">
+			</video>
+			<h3>TBS {{ page.market }} Nine</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-gem' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.tbs-gem }}">
+			</video>
+			<h3>TBS {{ page.market }} Gem</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-go' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.tbs-go }}">
+			</video>
+			<h3>TBS {{ page.market }} Go</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-life' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.tbs-life }}">
+			</video>
+			<h3>TBS {{ page.market }} Life</h3>
+		</div>
+		<div class="pip">
+			<video id='tbs-rush' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+				<source type="application/x-mpegURL" src="{{ page.tbs-rush }}">
+			</video>
+			<h3>TBS {{ page.market }} Rush</h3>
+		</div>
+		
+	</div>
+
+</main>
+
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+<!--NPC-->
+<script>
+	var player1 = videojs('npc-nine');
+  player1.autoplay();
+      
+  var player2 = videojs('npc-gem');
+  player2.autoplay();
+  
+  var player3 = videojs('npc-go');
+  player3.autoplay();
+  
+  var player4 = videojs('npc-life');
+  player4.autoplay();
+  
+  var player5 = videojs('npc-rush');
+  player5.autoplay();        
+  
+  videojs('player', {autoplay: true});
+</script>
+
+<!--TBS-->
+<script>
+	var player1 = videojs('tbs-nine');
+  player1.autoplay();
+  
+  var player2 = videojs('tbs-gem');
+  player2.autoplay();
+  
+  var player3 = videojs('tbs-go');
+  player3.autoplay();
+  
+  var player4 = videojs('tbs-life');
+  player4.autoplay();
+  
+  var player5 = videojs('tbs-rush');
+  player5.autoplay();        
+  
+  videojs('player', {autoplay: true});
+</script>
